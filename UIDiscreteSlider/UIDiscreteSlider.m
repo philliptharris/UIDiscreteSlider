@@ -34,17 +34,51 @@
 }
 
 - (void)commonInit {
-    _increment = 0.1;
+    
+    _increment = 0.25;
+    
+    self.minimumTrackTintColor = [UIColor colorWithWhite:0.7 alpha:1.0];
+    self.maximumTrackTintColor = [UIColor colorWithWhite:0.7 alpha:1.0];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+//===============================================
+#pragma mark -
+#pragma mark Draw Rect
+//===============================================
+
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+    [super drawRect:rect];
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetStrokeColorWithColor(context, [UIColor colorWithWhite:0.7 alpha:1.0].CGColor);
+    CGContextSetLineWidth(context, 1.0);
+    
+    CGRect trackRect = [self trackRectForBounds:self.bounds];
+    
+    CGRect minimumThumbRect = [self thumbRectForBounds:self.bounds trackRect:trackRect value:self.minimumValue];
+    CGRect maximumThumbRect = [self thumbRectForBounds:self.bounds trackRect:trackRect value:self.maximumValue];
+    
+    float totalValueDelta = (self.maximumValue - self.minimumValue);
+    
+    int totalNumberOfSteps = (int)(totalValueDelta / self.increment);
+    
+    CGFloat leftEdge = CGRectGetMidX(minimumThumbRect);
+    CGFloat rightEdge = CGRectGetMidX(maximumThumbRect);
+    CGFloat interspace = (rightEdge - leftEdge) / totalNumberOfSteps;
+    
+    CGFloat desiredLineHeight = 16.0;
+    CGFloat yPoint = (CGRectGetHeight(self.frame) - desiredLineHeight) / 2.0;
+    
+    for (int i = 0; i <= totalNumberOfSteps; i++) {
+        
+        CGFloat xPoint = roundf(leftEdge + interspace * i);
+        
+        CGContextMoveToPoint(context, xPoint, yPoint);
+        CGContextAddLineToPoint(context, xPoint, yPoint + desiredLineHeight);
+        CGContextStrokePath(context);
+    }
 }
-*/
 
 //===============================================
 #pragma mark -

@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9486FC75-A5CC-4506-810C-998CB81D88ED</string>
+	<string>FA39DE3F-DDCA-42A8-9556-44C15EF9ABD8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>UIDiscreteSlider</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>626C6182-7ECC-444E-BADC-C1C9AFA4A3D3</key>
-		<string>ssh://github.com/philliptharris/UIDiscreteSlider.git</string>
+		<key>503569D6-488E-4F03-AEA9-BBDB739DEFC7</key>
+		<string>https://github.com/philliptharris/UIDiscreteSlider.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>UIDiscreteSlider.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>626C6182-7ECC-444E-BADC-C1C9AFA4A3D3</key>
+		<key>503569D6-488E-4F03-AEA9-BBDB739DEFC7</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/philliptharris/UIDiscreteSlider.git</string>
+	<string>https://github.com/philliptharris/UIDiscreteSlider.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>626C6182-7ECC-444E-BADC-C1C9AFA4A3D3</string>
+	<string>503569D6-488E-4F03-AEA9-BBDB739DEFC7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>626C6182-7ECC-444E-BADC-C1C9AFA4A3D3</string>
+			<string>503569D6-488E-4F03-AEA9-BBDB739DEFC7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>UIDiscreteSlider</string>
 		</dict>
