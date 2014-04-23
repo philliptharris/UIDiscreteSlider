@@ -22,6 +22,7 @@
 		11F3237B190800E300348D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F3235A190800E300348D88 /* UIKit.framework */; };
 		11F32383190800E300348D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11F32381190800E300348D88 /* InfoPlist.strings */; };
 		11F32385190800E300348D88 /* UIDiscreteSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F32384190800E300348D88 /* UIDiscreteSliderTests.m */; };
+		11F323901908015800348D88 /* UIDiscreteSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F3238F1908015800348D88 /* UIDiscreteSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		11F32380190800E300348D88 /* UIDiscreteSliderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIDiscreteSliderTests-Info.plist"; sourceTree = "<group>"; };
 		11F32382190800E300348D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11F32384190800E300348D88 /* UIDiscreteSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDiscreteSliderTests.m; sourceTree = "<group>"; };
+		11F3238E1908015800348D88 /* UIDiscreteSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDiscreteSlider.h; sourceTree = "<group>"; };
+		11F3238F1908015800348D88 /* UIDiscreteSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDiscreteSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				11F3236B190800E300348D88 /* Main_iPad.storyboard */,
 				11F3236E190800E300348D88 /* ViewController.h */,
 				11F3236F190800E300348D88 /* ViewController.m */,
+				11F3238E1908015800348D88 /* UIDiscreteSlider.h */,
+				11F3238F1908015800348D88 /* UIDiscreteSlider.m */,
 				11F32371190800E300348D88 /* Images.xcassets */,
 				11F3235D190800E300348D88 /* Supporting Files */,
 			);
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F32370190800E300348D88 /* ViewController.m in Sources */,
+				11F323901908015800348D88 /* UIDiscreteSlider.m in Sources */,
 				11F32367190800E300348D88 /* AppDelegate.m in Sources */,
 				11F32363190800E300348D88 /* main.m in Sources */,
 			);
